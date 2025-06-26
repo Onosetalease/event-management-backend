@@ -33,6 +33,11 @@ let events = [];
 
 // Routes
 
+// ✅ Root route to confirm backend is working
+app.get('/', (req, res) => {
+  res.send('🎉 Event Management Backend is live!');
+});
+
 // Get all events
 app.get('/events', (req, res) => {
   res.json(events);
